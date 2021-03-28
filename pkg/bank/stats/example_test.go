@@ -10,9 +10,11 @@ func ExampleAvg() {
 	peyments := []types.Payment {
 		{ 
 			Amount : 10_000,
+			Category: "car",
 		},
 		{
 			Amount:  20_000,
+			Category: "car",
 		},
 	}
 	result := Avg(peyments)
