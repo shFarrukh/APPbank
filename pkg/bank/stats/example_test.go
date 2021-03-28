@@ -6,7 +6,7 @@ import (
 	"github.com/shFarrukh/bank/pkg/bank/types")
 
 
-func ExampleAvg() {
+func ExampleTotalInCategory() {
 	peyments := []types.Payment {
 		{ 
 			Amount : 10_000,
@@ -17,7 +17,7 @@ func ExampleAvg() {
 			Category: "car",
 		},
 	}
-	result := Avg(peyments)
+	result := TotalInCategory(peyments, "car")
 	fmt.Println(result)
 	// Output
 	// 15000
